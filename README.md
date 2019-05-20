@@ -6,7 +6,7 @@ Multi selection drop down web-component developed in Stencil.js.
 
 
 # In javascript
-# under body tag
+# Under body tag
 <as-ms-ddl></as-ms-ddl>
 <script>
       let component = document.querySelector('as-ms-ddl');
