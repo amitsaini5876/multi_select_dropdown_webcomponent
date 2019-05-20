@@ -23,7 +23,7 @@ export class AsMultiSelectDropDown {
   initializeOptions(options: IdropDownOption) {
     this.options = Object.assign(
       {
-        selected_value_appear: "count1"
+        selected_value_appear: "count"
       },
       options
     );
@@ -42,12 +42,9 @@ export class AsMultiSelectDropDown {
     }
   }
   onOk() {
-    debugger;
-    // this.selectedValues.emit(selection);
     this.toggle();
   }
   onCancel() {
-    debugger;
     this.selection = [];
     this.toggle();
   }
@@ -56,7 +53,6 @@ export class AsMultiSelectDropDown {
   }
   componentWillLoad() {
     this.initializeOptions(this.options);
-    // this.data = [{ label: "a", value: "1" }, { label: "b", value: "2" }, { label: "c", value: "3" }, { label: "d", value: "4" }, { label: "e", value: "5" }];
   }
   @Watch("data")
   onDataChange() {
@@ -69,21 +65,7 @@ export class AsMultiSelectDropDown {
     if (this.showDdlPanel) {
       this.selectedValuesHandler();
     }
-
     this.showDdlPanel = !this.showDdlPanel;
-    // if(!this.showDdlPanel){
-    //   this.selectedValues.emit(this.selection);
-    // }
-    // debugger;
-    // console.log(bit);
-    // console.log(e);
-    // if (bit) {
-    //   this.showDdlPanel = bit;
-    // } else {
-    //   if (e && (e.target.id === 'ddlPanel' || e.target.id === 'ddlInput')) { } else {
-    //     this.showDdlPanel = bit;
-    //   }
-    // }
   }
   render() {
     return (
@@ -107,8 +89,8 @@ export class AsMultiSelectDropDown {
               ? this.selection.length + " selected"
               : "please select"
             : this.selection.length > 0
-            ? this.selection.map(x => x.label).join()
-            : "please select"}
+              ? this.selection.map(x => x.label).join()
+              : "please select"}
         </div>
         <i class="as-dropdown-icon down" />
         {this.showDdlPanel ? (
@@ -139,8 +121,8 @@ export class AsMultiSelectDropDown {
             </div>
           </div>
         ) : (
-          ""
-        )}
+            ""
+          )}
       </div>
     );
   }
