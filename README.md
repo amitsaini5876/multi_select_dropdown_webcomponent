@@ -2,7 +2,7 @@
 Multi selection drop down web-component developed in Stencil.js.
 
 # Usage
-`<script src='https://unpkg.com/multi-select-dropdown-webcomponent@latest/dist/as-ms-ddl.js'></script>`
+`<script src='https://unpkg.com/multiselectdropdown-webcomponent@latest/dist/mycomponent.js'></script>`
 
 
 # In javascript
