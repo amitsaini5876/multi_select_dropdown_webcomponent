@@ -7,20 +7,18 @@
 
 ## Properties
 
-| Property  | Attribute                                 | Description                   | Type              | Default     |
-| --------- | -------------------------------------     | ----------------------------- | ----------------- | ----------- |
-| `data`    |  `[{label:string,value:string}]`          | `array of IdropDownData`      | `IdropDownData[]` | `undefined` |    
-|           |                                           | `in the form of label, value` |                   |             |
-| `options` |  `{selected_value_appear:string}`         | `count OR value`              | `IdropDownOption` | `count`     |
----------------------------------------------------------------------------------------------------------------------------
+| Property  | Attribute | Description | Type              | Default     |
+| --------- | --------- | ----------- | ----------------- | ----------- |
+| `data`    | --        |             | `IdropDownData[]` | `undefined` |
+| `options` | --        |             | `IdropDownOption` | `undefined` |
+
 
 ## Events
 
-| Event            | Description                             | Type                      |
-| ---------------- | -----------                             | ------------------------- |
-| `selectedValues` | `return array repective of`             | `Array<IdropDownData>`    |
-|                  | `selected_value_appear option passed`   |                           |
-------------------------------------------------------------------------------------------
+| Event            | Description | Type                      |
+| ---------------- | ----------- | ------------------------- |
+| `selectedValues` |             | `CustomEvent<Array<any>>` |
+
 
 ----------------------------------------------
 

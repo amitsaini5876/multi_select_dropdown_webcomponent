@@ -1,6 +1,6 @@
 {
-  "name": "multiselectdropdown",
-  "version": "0.0.3",
+  "name": "multiselectdropdown-webcomponent",
+  "version": "patch",
   "description": "Stencil Component Starter",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
